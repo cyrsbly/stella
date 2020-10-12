@@ -50,7 +50,7 @@ USER_SETTINGS = {}
 
 GDPR = []
 
-STELLA_IMG = "https://telegra.ph/file/d5a2e552ba53871952547.jpg"
+STELLA_IMG = "https://telegra.ph/file/302b7ea8370d627d1359b.jpg"
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("stella.modules." + module_name)
@@ -146,10 +146,10 @@ def send_start(bot, update):
         pass
 
     chat = update.effective_chat  # type: Optional[Chat]
-    text = "Hey there! I'm Stella."
+    text = "Hey there!"
     text += "\nI'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of\nthe things I can help you with."
    
-    keyboard = [[InlineKeyboardButton(text="❓ Help", callback_data="help_back"),InlineKeyboardButton(text=" 👥 Join OT group.",url="https://telegram.dog/codglobalot")]]
+    keyboard = [[InlineKeyboardButton(text="❓ Help", callback_data="help_back"),InlineKeyboardButton(text=" 👥 Join Werewelcome to Jollibee.",url="https://telegram.dog/wwjollibee")]]
     
     update.effective_message.reply_photo(STELLA_IMG,text, reply_markup=InlineKeyboardMarkup(keyboard), parse_mode=ParseMode.MARKDOWN)
                                             
